@@ -78,8 +78,8 @@ nav {
   display: grid;
   grid-row: span 1;
   grid-column: span 1;
-  background: rgb(23, 133, 179);
-  background: linear-gradient(162deg, rgba(23, 133, 179, 1)0%, rgba(38, 57, 138, 1) 100%);
+  background: navy;
+  background: linear-gradient(162deg, rgba(29, 167, 226, 1)0%, rgba(0, 0, 51, 1) 100%);
 }
 
 div.inner-wrap {
@@ -92,4 +92,129 @@ div.site-header {
   font-size: 2em;
   font-weight: 700;
   color: #ffffff
+}
+
+div.site-subheader {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 40px;
+  color: #d6d6d6;
+  margin-top: 10px;
+}
+
+ul.site-navigation li {
+  border-bottom: 1px solid rgba(214, 214, 214, 0.4);
+  padding: 20px 20px 20px 20px;
+  font-size: 1.1em;
+}
+
+ul.site-navigation li a {
+  color: #d6d6d6;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+ul.site-navigation li a:hover {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.menu {
+  display: none;
+}
+
+main {
+  grid-row: span 1;
+  grid-column: span 1;
+  padding: 50px 50px 50px 50px;
+}
+
+.about-image {
+  float: left;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+ul.social {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+
+ul.social li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+ul.social li:last-child {
+  margin-bottom: 0px;
+}
+
+footer {
+  font-size: 0.9em;
+  text-align: center;
+  color: #414141;
+}
+
+article.portfolio-item {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 150px 1fr;
+}
+
+div.portfolio-image {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+div.portfolio-description {
+  padding-left: 50px;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  div.wrapper{
+    width: 96%;
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .active {
+    display: grid;
+  }
+
+  .menuup {
+    grid-template-columns: 200px 1fr!important;
+  }
+
+  .menu {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .menu i {
+    margin-right: 10px;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  main {
+    padding: 20px 20px 20px 20px;
+  }
 }
