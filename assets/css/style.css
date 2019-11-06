@@ -86,6 +86,10 @@ div.inner-wrap {
   display: block;
 }
 
+div.site-header, div.site-subheader {
+  text-align: center;
+}
+
 div.site-header {
   margin-top: 60%;
   text-align: center;
@@ -106,6 +110,7 @@ ul.site-navigation li {
   border-bottom: 1px solid rgba(214, 214, 214, 0.4);
   padding: 20px 20px 20px 20px;
   font-size: 1.1em;
+  text-align: center;
 }
 
 ul.site-navigation li a {
